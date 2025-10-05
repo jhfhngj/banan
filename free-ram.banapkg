@@ -1,0 +1,8 @@
+{
+  "ver": "1.0",
+  "name": "freeram",
+  "dependent": [],
+  "installplace": "~/",
+  "code": "print('There is no such thing like free RAM, oo oo aa aa - Monkey 4')",
+  "type": "py"
+}

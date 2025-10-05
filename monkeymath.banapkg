@@ -1,0 +1,8 @@
+{
+  "ver": "1.0",
+  "name": "banana-math",
+  "dependent": [],
+  "installplace": "~/",
+  "code": "import random\n\ndef banana_add(a,b):\n    print(f'🍌 Adding {a} + {b}!')\n    return a+b\n\ndef banana_randint(low, high):\n    n = random.randint(low, high)\n    print(f'🍌 Random banana boost: {n}!')\n    return n\n\ndef banana_fact(n):\n    f = 1\n    for i in range(1,n+1):\n        f *= i\n        print('🍌', end='')\n    print('')\n    return f",
+  "type": "py"
+}

@@ -1,0 +1,8 @@
+{
+  "ver": "1.0",
+  "name": "banana-utils",
+  "dependent": [],
+  "installplace": "~/",
+  "code": "import random\n\ndef print_fancy(text):\n    colors = ['\\033[91m','\\033[92m','\\033[93m','\\033[94m','\\033[95m','\\033[96m']\n    print(''.join(random.choice(colors) + c for c in text) + '\\033[0m')\n\ndef random_boost():\n    return random.randint(1,100)\n\ndef ascii_banana():\n    print('''\n       _\n     _/\\\n    /   \\\n   |     |\n    \\___/\n    ''')",
+  "type": "py"
+}

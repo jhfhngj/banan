@@ -1,0 +1,8 @@
+{
+  "ver": "1.0",
+  "name": "monkeyfart",
+  "dependent": [],
+  "installplace": "~/",
+  "code": "print('Me monkey had 2 let 1 rip - Monkey 3')",
+  "type": "py"
+}

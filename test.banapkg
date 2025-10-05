@@ -1,0 +1,8 @@
+{
+    "ver": "1.0.0", 
+    "name": "test", 
+    "type": "txt", 
+    "dependent": "",
+    "installplace": "~/", 
+    "code": "This is a testing package for MonkeyOS."
+}
