@@ -1,0 +1,8 @@
+{
+  "ver": "1.0.0",
+  "name": "example",
+  "type": "py",
+  "dependent": ["test", "free-ram"],
+  "installplace": "~/.bananpkgs",
+  "code": "# Example package code goes here\nprint('Hello from Example Package!')"
+}
