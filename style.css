@@ -15,11 +15,12 @@ h3 { font-size: 1.3em; }
 
 div {
     font-family: monospace;
-    background-color: #040404;
+    border-color: #040404;
     padding: 2px 4px;
     border-radius: 4px;
-    color: #999
-    background-size: 30px
+    color: #999;
+    border-size: 10px;
+    size: 10px;
 }
 
 li {
