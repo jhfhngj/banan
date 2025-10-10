@@ -13,9 +13,10 @@ h1 { font-size: 2em; }
 h2 { font-size: 1.6em; }
 h3 { font-size: 1.3em; }
 
-code {
+div {
     font-family: monospace;
     background-color: #040404;
     padding: 2px 4px;
     border-radius: 4px;
+    color: #999
 }
