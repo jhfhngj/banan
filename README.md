@@ -16,7 +16,7 @@ Think of it as **apt-get**, but **monkey chaos style**.
 
 - Fast installs 🍌  
 - Dependency handling 🐒  
-- Debug prints that make it feel legit (like real apt)  
+- Debug prints for awesome brain
 
 ---
 
