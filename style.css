@@ -1,7 +1,21 @@
 body {
-   color: black;
+    color: #000;           /* black text */
+    background-color: #fff; /* optional: white bg for readability */
+    line-height: 1.6;       /* easier to read paragraphs */
+    margin: 20px;           /* give some padding around content */
 }
 
 h1, h2, h3, strong, p {
-   font: sans-serif;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif; /* nicer sans-serif stack */
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.3em; }
+
+code {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
 }
