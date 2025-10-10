@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Welcome to the BANAN Repo!</title></head>
+  <body>
+    <style>
+      body {
+         color: black;
+      }
+      
+      h1, h2, h3, strong, p {
+         font: sans-serif;
+      }
+    </style>
+    <h1 id="-banan-packages-repo-monkeyos-edition-">🍌 BANAN Packages Repo – MonkeyOS Edition 🐒</h1>
+    <p>Welcome to the official <strong>Banan packages repository</strong> for <strong>MonkeyOS</strong>!  </p>
+    <p>This is where all your <code>.banapkg</code> files live, ready to be installed using the <strong>Banan package manager</strong>.</p>
+    <hr>
+    <h2 id="what-is-banan-">What is BANAN?</h2>
+    <p><strong>BANAN</strong> is the MonkeyOS package manager.  </p>
+    <p>It fetches, installs, and resolves dependencies for <code>.banapkg</code> files. </p>
+    <p>Think of it as <strong>apt-get</strong>, but <strong>monkey chaos style</strong>.  </p>
+    <ul>
+    <li>Fast installs 🍌  </li>
+    <li>Dependency handling 🐒  </li>
+    <li>Debug prints that make it feel legit (like real apt)  </li>
+    </ul>
+    <hr>
+    <h2 id="installing-packages">Installing Packages</h2>
+    <p>Use your MonkeyOS Banan client:</p>
+    <pre><code class="lang-bash">banan <span class="hljs-keyword">install</span> &lt;<span class="hljs-keyword">package</span>-<span class="hljs-keyword">name</span>&gt;
+    </code></pre>
+    <p>Example:</p>
+    <pre><code class="lang-bash"><span class="hljs-keyword">banan </span><span class="hljs-keyword">install </span>free-ram
+    </code></pre>
+    <h3 id="will-automatically-">Will automatically:</h3>
+    <ul>
+    <li>Fetch example.banapkg from this repo</li>
+    <li>Install dependencies (if any)</li>
+    <li>Write the code to the package&#39;s install path (usually ~/.bananpkgs)</li>
+    <li>Show monkey-approved debug messages</li>
+    </ul>
+    <h3 id="package-format-banapkg-">Package Format (.banapkg)</h3>
+    <p>Each package is a JSON file with the following structure:</p>
+    <pre><code class="lang-json">{
+      <span class="hljs-attr">"ver"</span>: <span class="hljs-string">"1.0.0"</span>,
+      <span class="hljs-attr">"name"</span>: <span class="hljs-string">"example-jungles"</span>,
+      <span class="hljs-attr">"type"</span>: <span class="hljs-string">"py"</span>,
+      <span class="hljs-attr">"dependent"</span>: [<span class="hljs-string">"example"</span>, <span class="hljs-string">"dependencytest"</span>],
+      <span class="hljs-attr">"installplace"</span>: <span class="hljs-string">"~/.bananpkgs"</span>,
+      <span class="hljs-attr">"code"</span>: <span class="hljs-string">"# Your code goes here\nprint('Hello from example jungles!')"</span>
+    }
+    </code></pre>
+    <h3 id="fields-explained-">Fields explained:</h3>
+    <ul>
+    <li>ver → package version</li>
+    <li>name → package name (used for filename when installed)</li>
+    <li>type → file extension (py, txt, etc.)</li>
+    <li>dependent → list of other packages required</li>
+    <li>installplace → install location</li>
+    <li>code → the actual code/content</li>
+    </ul>
+    <h3 id="contributing">Contributing</h3>
+    <p>Want to add a new package? Just:</p>
+    <ol>
+    <li><p>Fork this repo 🍌</p>
+    </li>
+    <li><p>Add a .banapkg file following the template</p>
+    </li>
+    <li><p>Make sure dependencies exist in this repo (or create them!)</p>
+    </li>
+    <li><p>Submit a PR and let the crazed monkeys review 🐒</p>
+    </li>
+    </ol>
+    <h3 id="monkey-tips">Monkey Tips</h3>
+    <p>Ctrl+C → Abort any install (Monkey-approved 🐒💨)</p>
+    <p>You can use <code>time banan install &lt;package&gt;</code> to see how fast BANAN really is when downloading 🚀</p>
+    <h3 id="license">License</h3>
+    <p>MIT License – keep the chaos, credit the original monkeys, no warranty 😎</p>
+  </body>
+</html>
