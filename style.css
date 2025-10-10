@@ -13,14 +13,14 @@ h1 { font-size: 2em; }
 h2 { font-size: 1.6em; }
 h3 { font-size: 1.3em; }
 
-div {
+div.code {
+    background-color: #111;    /* dark panel */
+    color: #999;               /* chill gray text */
+    padding: 10px;
+    border-radius: 6px;
     font-family: monospace;
-    border-color: #040404;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color: #999;
-    border-size: 10px;
-    size: 10px;
+    white-space: pre;          /* preserve formatting */
+    overflow-x: auto;
 }
 
 li {
