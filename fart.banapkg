@@ -1,1 +1,1 @@
-{"ver": "1.0", "name": "monkeyfart", "dependent": [], "installplace": "~/", "code": "print('Me monkey had 2 let 1 rip - Monkey 3')", "type": "py", "checksum": "a344b59890ef65c9c58df7742e8f3b68c28934b6cc4bf312cd5532f3ed17c2fc8459046750c6534c983908eb263b7fd7197c742926afabccf917c6e98985d817"}
+{"ver": "1.0", "name": "monkeyfart", "dependent": [], "installplace": "~/", "code": "print('Me monkey had 2 let 1 rip - Monkey 3')", "type": "py", "checksum": "14a9e56f2729664bf284fef39bb00c882c351238ffe8dc2030fa0f632c7edc33225c0f89153fadd934ec5d654fab867ed2fdac5df51795063427d7717c89103a"}

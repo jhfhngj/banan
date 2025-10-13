@@ -1,1 +1,1 @@
-{"ver": "1.0.0", "name": "test", "type": "txt", "dependent": "", "installplace": "~/", "code": "This is a testing package for MonkeyOS.", "checksum": "a0c8475a283e3e00fb8da406349ee1fe7bc975bad825c50fbb964af6e17662b27b688813b393e630d3279ec2d998453accdfecd13d8e24239109f72305b0be15"}
+{"ver": "1.0.0", "name": "test", "type": "txt", "dependent": "", "installplace": "~/", "code": "This is a testing package for MonkeyOS.", "checksum": "815df145f4814b130011ddab385db6f9b85a7585032e6cb9ad4e1e273be3d3e46ba451f034e9beec3462be2006087d5ef939e5d5f725872a4f42b067f94d48d8"}
