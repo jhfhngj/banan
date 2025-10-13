@@ -1,8 +1,1 @@
-{
-  "ver": "1.0",
-  "name": "banana-utils",
-  "dependent": [],
-  "installplace": "~/",
-  "code": "import random\n\ndef print_fancy(text):\n    colors = ['\\033[91m','\\033[92m','\\033[93m','\\033[94m','\\033[95m','\\033[96m']\n    print(''.join(random.choice(colors) + c for c in text) + '\\033[0m')\n\ndef random_boost():\n    return random.randint(1,100)\n\ndef ascii_banana():\n    print('''\n       _\n     _/\\\n    /   \\\n   |     |\n    \\___/\n    ''')",
-  "type": "py"
-}
+{"ver": "1.0", "name": "banana-utils", "dependent": [], "installplace": "~/", "code": "import random\n\ndef print_fancy(text):\n    colors = ['\\033[91m','\\033[92m','\\033[93m','\\033[94m','\\033[95m','\\033[96m']\n    print(''.join(random.choice(colors) + c for c in text) + '\\033[0m')\n\ndef random_boost():\n    return random.randint(1,100)\n\ndef ascii_banana():\n    print('''\n       _\n     _/\\\n    /   \\\n   |     |\n    \\___/\n    ''')", "type": "py", "checksum": "48a4e4c06c90646da6d401b2d4d1a43cf1ee39377c2d5f2390cc0e45ffc0b4c1ce0c2acca344209125d4746320f83e32739c348cf251bb7e8d1d72072f2f35e2"}

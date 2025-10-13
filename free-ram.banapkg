@@ -1,8 +1,1 @@
-{
-  "ver": "1.0",
-  "name": "freeram",
-  "dependent": [],
-  "installplace": "~/",
-  "code": "print('There is no such thing like free RAM, oo oo aa aa - Monkey 4')",
-  "type": "py"
-}
+{"ver": "1.0", "name": "freeram", "dependent": [], "installplace": "~/", "code": "print('There is no such thing like free RAM, oo oo aa aa - Monkey 4')", "type": "py", "checksum": "74031f47cd6d78e305a3af5f3e14caf1791c8e95878b4695ab1c80473dbd08f27acf9574ce5ec269a17319e3b88cc45835c962120ad2a23a6fd9d2d746527a38"}

@@ -1,8 +1,1 @@
-{
-  "ver": "1.0.0",
-  "name": "example",
-  "type": "py",
-  "dependent": ["test", "free-ram"],
-  "installplace": "~/.bananpkgs",
-  "code": "# Example package code goes here\nprint('Hello from Example Package!')"
-}
+{"ver": "1.0.0", "name": "example", "type": "py", "dependent": ["test", "free-ram"], "installplace": "~/.bananpkgs", "code": "# Example package code goes here\nprint('Hello from Example Package!')", "checksum": "cfa4e843e08286aaa2d9636fc3f7421a67a40b26fa909227f6f918625bde3eb031f26befe55910d2d3daf90df4a61a2295516b1be5187a710fef921f115530af"}
