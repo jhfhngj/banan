@@ -75,7 +75,7 @@ Want to add a new package? Just:
 
 ### Monkey Tips
 
-Ctrl+C → Abort any install (Monkey-approved 🐒💨)
+Ctrl+C → Abort any install (Monkey-approved 🐒⚡️)
 
 You can use `time banan install <package>` to see how fast BANAN really is when downloading 🚀
 
