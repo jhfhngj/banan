@@ -48,7 +48,8 @@ Each package is a JSON file with the following structure:
   "type": "py",
   "dependent": ["example", "dependencytest"],
   "installplace": "~/.bananpkgs",
-  "code": "# Your code goes here\nprint('Hello from example jungles!')"
+  "code": "# Your code goes here\nprint('Hello from example jungles!')",
+  "checksum": "[Insert checksum here]"
 }
 ```
 
