@@ -70,21 +70,36 @@
     <p>You can use</p><br><div>time banan install &lt;package&gt;</div><br><p>to see how fast BANAN really is when downloading 🚀</p>
     <h3 id="license">License</h3>
     <p>MIT License – keep the chaos, credit the original monkeys, no warranty 😎</p>
-    <script>
+    <!-- Add this right before your <h3 id="package-format-banapkg-"> section -->
+<hr>
+<h2 id="available-packages">Available Packages 🍌</h2>
+<ul id="package-list">
+    <!-- JavaScript will put the packages here! -->
+</ul>
+<hr>
+
+<script>
   async function listBananPackages() {
     const user = 'jhfhngj';
     const repo = 'banan';
-    const folderPath = ''; // Use '' for root or 'packages' if in a subfolder
+    const folderPath = ''; 
     const url = `https://api.github.com/repos/${user}/${repo}/contents/${folderPath}`;
 
     try {
         const response = await fetch(url);
         const files = await response.json();
 
-        // Filter for files ending in .banapkg
+        // FIXED: Changed .endswith to .endsWith (Case Sensitive in JS)
         const packages = files.filter(file => file.name.endsWith('.banapkg'));
         
         const listElement = document.getElementById('package-list');
+        
+        // If no packages found, show a message
+        if (packages.length === 0) {
+            listElement.innerHTML = "<li>No banapkgs found yet. Add some! 🐒</li>";
+            return;
+        }
+
         packages.forEach(pkg => {
             const li = document.createElement('li');
             li.textContent = pkg.name.replace('.banapkg', '');
@@ -92,6 +107,7 @@
         });
     } catch (error) {
         console.error('Failed to fetch packages:', error);
+        document.getElementById('package-list').innerHTML = "<li>Monkey 5 failed to fetch the list!</li>";
     }
   }
 
