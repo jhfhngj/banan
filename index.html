@@ -70,5 +70,31 @@
     <p>You can use</p><br><div>time banan install &lt;package&gt;</div><br><p>to see how fast BANAN really is when downloading 🚀</p>
     <h3 id="license">License</h3>
     <p>MIT License – keep the chaos, credit the original monkeys, no warranty 😎</p>
+    <script>async function listBananPackages() {
+    const user = 'jhfhngj';
+    const repo = 'banan';
+    const folderPath = ''; // Use '' for root or 'packages' if in a subfolder
+    const url = `https://api.github.com/repos/${user}/${repo}/contents/${folderPath}`;
+
+    try {
+        const response = await fetch(url);
+        const files = await response.json();
+
+        // Filter for files ending in .banapkg
+        const packages = files.filter(file => file.name.endswith('.banapkg'));
+        
+        const listElement = document.getElementById('package-list');
+        packages.forEach(pkg => {
+            const li = document.createElement('li');
+            li.textContent = pkg.name.replace('.banapkg', '');
+            listElement.appendChild(li);
+        });
+    } catch (error) {
+        console.error('Failed to fetch packages:', error);
+    }
+}
+
+listBananPackages();
+</script>
   </body>
 </html>
