@@ -1,4 +1,4 @@
-# 🍌 BANAN Packages Repo – MonkeyOS Edition 🐒
+# 🍌 Banan Packages Repo – MonkeyOS Edition 🐒
 
 Welcome to the official **Banan packages repository** for **MonkeyOS**!  
 
@@ -6,17 +6,18 @@ This is where all your `.banapkg` files live, ready to be installed using the **
 
 ---
 
-## What is BANAN?
+## What is Banan?
 
-**BANAN** is the MonkeyOS package manager.  
+**Banan** is the MonkeyOS package manager.  
 
 It fetches, installs, and resolves dependencies for `.banapkg` files. 
 
-Think of it as **apt-get**, but **monkey chaos style**.  
+Think of it as **apt** or **apt-get**, but **monkey chaos style**.  
 
 - Fast installs 🍌  
 - Dependency handling 🐒  
 - Debug prints for awesome brain
+- Manual PR checks and ClamAV scans
 
 ---
 
