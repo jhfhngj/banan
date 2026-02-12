@@ -30,7 +30,7 @@ banan install <package-name>
 ```
 Example:
 ```bash
-banan install free-ram
+banan install example
 ```
 ### Will automatically:
 
