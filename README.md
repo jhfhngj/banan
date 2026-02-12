@@ -1,6 +1,6 @@
-# 🍌 Banan Packages Repo – MonkeyOS Edition 🐒
+# 🍌 Banan Packages Repo 🐒
 
-Welcome to the official **Banan packages repository** for **MonkeyOS**!  
+Welcome to the official **Banan packages repository**!  
 
 This is where all your `.banapkg` files live, ready to be installed using the **Banan package manager**.
 
