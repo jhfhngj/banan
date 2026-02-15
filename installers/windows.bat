@@ -1,9 +1,8 @@
 @echo off
-REM Make sure to have Git and Python installed!
 
 echo Installing Banan...
 echo Cloning Banan Git repo...
-git clone https://github.com/jhfhngj/banan.git
+git clone https://github.com/jhfhngj/banan.git 2>nul
 echo Cloned Banan Git repo.
 
 cd banan
@@ -15,35 +14,33 @@ echo import json
 echo import sys
 echo import os
 echo.
-echo def extract_banapkg_to_file(banapkg_path, output_file):
-echo     if not os.path.isfile(banapkg_path):
-echo         print("Error: {} does not exist.".format(banapkg_path))
+echo def extract_banapkg_to_file^(banapkg_path, output_file^):
+echo     if not os.path.isfile^(banapkg_path^):
+echo         print^("Error: {} does not exist.".format^(banapkg_path^)^)
 echo         return
 echo.
-echo     with open(banapkg_path, "r") as f:
-echo         pkg = json.load(f)
+echo     with open^(banapkg_path, "r"^) as f:
+echo         pkg = json.load^(f^)
 echo.
-echo     code = pkg.get("code", "")
+echo     code = pkg.get^("code", ""^)
 echo.
-echo     with open(output_file, "w") as f:
-echo         f.write(code)
+echo     with open^(output_file, "w"^) as f:
+echo         f.write^(code^)
 echo.
-echo     print("Extracted {} -> {}".format(banapkg_path, output_file))
+echo     print^("Extracted {} -> {}".format^(banapkg_path, output_file^)^)
 echo.
 echo if __name__ == "__main__":
-echo     if len(sys.argv) != 3:
-echo         print("Usage: python extractor.py ^<file.banapkg^> ^<output_file^>")
+echo     if len^(sys.argv^) != 3:
+echo         print^("Usage: python extractor.py ^<file.banapkg^> ^<output_file^>"^)
 echo     else:
-echo         extract_banapkg_to_file(sys.argv[1], sys.argv[2])
+echo         extract_banapkg_to_file^(sys.argv[1], sys.argv[2]^)
 ) > extractor.py
 
 echo Running extractor script...
 py extractor.py bananclient.banapkg banan.py
 
-echo Moving file...
 copy banan.py ..
 cd ..
 rmdir /s /q banan
 
 echo Banan has successfully been installed.
-pause
