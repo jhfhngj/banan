@@ -38,9 +38,15 @@ echo         extract_banapkg_to_file^(sys.argv[1], sys.argv[2]^)
 
 echo Running extractor script...
 py extractor.py bananclient.banapkg banan.py
+echo Extractor script ran successfully.
 
+echo Finishing up...
+echo Copying banan.py to ..
 copy banan.py ..
 cd ..
+echo Copied banan.py to ..
+echo Cleaning up banan folder...
 rmdir /s /q banan
+echo Cleaned up banan folder.
 
 echo Banan has successfully been installed.
