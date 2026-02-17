@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to the BANAN Repo!</title>
+    <title>Welcome to the Banan Repo!</title>
     <link rel="stylesheet" href="https://jhfhngj.github.io/banan/style.css">
   </head>
   <body>
-    <h1 id="-banan-packages-repo-monkeyos-edition-">🍌 BANAN Packages Repo – MonkeyOS Edition 🐒</h1>
+    <h1 id="-banan-packages-repo-monkeyos-edition-">🍌 Banan Packages Repo – MonkeyOS Edition 🐒</h1>
     <p>Welcome to the official <strong>Banan packages repository</strong> for <strong>MonkeyOS</strong>!  </p>
     <p>This is where all your <div>.banapkg</div> files live, ready to be installed using the <strong>Banan package manager</strong>.</p>
     <hr>
-    <h2 id="what-is-banan-">What is BANAN?</h2>
-    <p><strong>BANAN</strong> is the MonkeyOS package manager.  </p>
+    <h2 id="what-is-banan-">What is Banan?</h2>
+    <p><strong>Banan</strong> is the MonkeyOS package manager.  </p>
     <p>It fetches, installs, and resolves dependencies for <div>.banapkg</div> files. </p>
     <p>Think of it as <strong>apt-get</strong>, but <strong>monkey chaos style</strong>.  </p>
     <ul>
@@ -28,9 +28,9 @@
     </div></pre>
     <p id="will-automatically-">Will automatically:</p>
     <ul>
-    <li>Fetch example.banapkg from this repo</li>
-    <li>Install dependencies (if any)</li>
-    <li>Write the div to the package&#39;s install path (usually ~/.bananpkgs)</li>
+    <li>Fetch free-ram.banapkg from this repo</li>
+    <li>Install dependencies (free-ram has one)</li>
+    <li>Write the div to the package's install path (usually ~/.bananpkgs)</li>
     <li>Show monkey-approved debug messages</li>
     </ul>
     <h3 id="package-format-banapkg-">Package Format (.banapkg)</h3>
@@ -41,7 +41,7 @@
       <span class="hljs-attr">"type"</span>: <span class="hljs-string">"py"</span>,
       <span class="hljs-attr">"dependent"</span>: [<span class="hljs-string">"example"</span>, <span class="hljs-string">"dependencytest"</span>],
       <span class="hljs-attr">"installplace"</span>: <span class="hljs-string">"~/.bananpkgs"</span>,
-      <span class="hljs-attr">"div"</span>: <span class="hljs-string">"# Your div goes here\nprint('Hello from example jungles!')"</span>
+      <span class="hljs-attr">"code"</span>: <span class="hljs-string">"# Your code goes here\nprint('Hello from example jungles!')"</span>
     }
     </div></pre>
     <p id="fields-explained-">Fields explained:</p>
@@ -51,7 +51,7 @@
     <li>type → file extension (py, txt, etc.)</li>
     <li>dependent → list of other packages required</li>
     <li>installplace → install location</li>
-    <li>div → the actual div/content</li>
+    <li>code → the actual code/content</li>
     </ul>
     <h3 id="contributing">Contributing</h3>
     <p>Want to add a new package? Just:</p>
@@ -67,7 +67,7 @@
     </ol>
     <h3 id="monkey-tips">Monkey Tips</h3>
     <p>Ctrl+C → Abort any install (Monkey-approved 🐒💨)</p>
-    <p>You can use</p><br><div>time banan install &lt;package&gt;</div><br><p>to see how fast BANAN really is when downloading 🚀</p>
+    <p>You can use</p><br><div>time banan install &lt;package&gt;</div><br><p>to see how fast Banan really is when downloading 🚀</p>
     <h3 id="license">License</h3>
     <p>MIT License – keep the chaos, credit the original monkeys, no warranty 😎</p>
     <!-- Add this right before your <h3 id="package-format-banapkg-"> section -->
