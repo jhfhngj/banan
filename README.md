@@ -8,7 +8,7 @@ This is where all your `.banapkg` files live, ready to be installed using the **
 
 ## What is Banan?
 
-**Banan** is the MonkeyOS package manager.  
+**Banan** is a package manager.  
 
 It fetches, installs, and resolves dependencies for `.banapkg` files. 
 
